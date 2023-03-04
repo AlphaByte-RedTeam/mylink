@@ -18,21 +18,20 @@ export default function Home() {
         width={650}
         height={650}
       />
-      <div className="flex flex-col md:flex-row gap-6 z-20">
+      <div className="flex flex-col items-start md:items-center md:flex-row gap-6 z-20">
         <Image
-          className="rounded-md w-24 h-24"
+          className="rounded-md md:w-40 md:h-40"
           src="/myphoto.png"
           alt="Andrew's photo"
           width={128}
           height={128}
         />
         <div className="space-y-2">
-          <span className="flex flex-row items-center gap-3">
+          <span className="flex flex-col items-start gap-3">
             <h1 className="text-white text-3xl leading-9 font-bold">
               Andrew Virya Victorio
             </h1>
-            <p className="text-white text-3xl">•</p>
-            <p className="text-zinc-400 text-xl">Software Engineer</p>
+            <p className="text-zinc-400 text-xl">🧑‍💻 Software Engineer</p>
           </span>
           <p className="text-gray-400 text-lg leading-7 font-normal">
             Strong work ethic and have high standards, collaborative team
