@@ -4,6 +4,7 @@ import { GithubCircle, Instagram, Twitter, LinkedIn, Mail } from "iconoir-react"
 import { IBM_Plex_Mono } from "next/font/google"
 
 const ibmPlexMono = IBM_Plex_Mono({
+  subsets: ["latin"],
   fallback: ["Arial", "sans-serif", "system-ui"],
   weight: "400",
 })
