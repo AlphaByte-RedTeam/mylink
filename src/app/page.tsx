@@ -33,7 +33,7 @@ export default function Home() {
       </div>
       <div className="flex flex-col space-y-6 z-20">
         <Link href="https://github.com/AlphaByte-RedTeam">
-          <button className="flex flex-row w-full justify-between px-4 py-4 items-center gap-6 rounded-md bg-gradient-to-br from-glassmorphishm-38 to-glassmorphishm-8 drop-shadow-glassmorphism text-base leading-6 font-normal text-white border border-gray-300">
+          <button className="flex flex-row w-full justify-between px-4 py-4 items-center gap-6 rounded-md bg-gradient-to-br from-glassmorphishm-38 to-glassmorphishm-8 drop-shadow-glassmorphism text-base leading-6 font-normal text-white border border-gray-300 transition ease-in-out duration-300 hover:bg-glassmorphishm-38 hover:-translate-y-2">
             <GithubCircle className="inline-block w-6 h-6 text-white" />
             <span className="tex-white content-center">
               GitHub/AlphaByte-RedTeam
@@ -42,21 +42,21 @@ export default function Home() {
           </button>
         </Link>
         <Link href="https://instagram.com/avv_210/">
-          <button className="flex flex-row w-full justify-between px-4 py-4 items-center gap-6 rounded-md bg-gradient-to-br from-glassmorphishm-38 to-glassmorphishm-8 drop-shadow-glassmorphism text-base leading-6 font-normal text-white border border-fuchsia-300">
+          <button className="flex flex-row w-full justify-between px-4 py-4 items-center gap-6 rounded-md bg-gradient-to-br from-glassmorphishm-38 to-glassmorphishm-8 drop-shadow-glassmorphism text-base leading-6 font-normal text-white border border-fuchsia-300 transition ease-in-out duration-300 hover:bg-glassmorphishm-38 hover:-translate-y-2">
             <Instagram className="inline-block w-6 h-6 text-white" />
             <span className="tex-white content-center">Instagram/@avv_210</span>
             <div>{""}</div>
           </button>
         </Link>
         <Link href="https://twitter.com/avv_210">
-          <button className="flex flex-row w-full justify-between px-4 py-4 items-center gap-6 rounded-md bg-gradient-to-br from-glassmorphishm-38 to-glassmorphishm-8 drop-shadow-glassmorphism text-base leading-6 font-normal text-white border border-blue-300">
+          <button className="flex flex-row w-full justify-between px-4 py-4 items-center gap-6 rounded-md bg-gradient-to-br from-glassmorphishm-38 to-glassmorphishm-8 drop-shadow-glassmorphism text-base leading-6 font-normal text-white border border-blue-300 transition ease-in-out duration-300 hover:bg-glassmorphishm-38 hover:-translate-y-2">
             <Twitter className="inline-block w-6 h-6 text-white" />
             <span className="tex-white content-center">Twitter/@avv_210</span>
             <div>{""}</div>
           </button>
         </Link>
         <Link href="https://www.linkedin.com/in/andrew-virya-victorio/">
-          <button className="flex flex-row w-full justify-between px-4 py-4 items-center gap-6 rounded-md bg-gradient-to-br from-glassmorphishm-38 to-glassmorphishm-8 drop-shadow-glassmorphism text-base leading-6 font-normal text-white border border-blue-500">
+          <button className="flex flex-row w-full justify-between px-4 py-4 items-center gap-6 rounded-md bg-gradient-to-br from-glassmorphishm-38 to-glassmorphishm-8 drop-shadow-glassmorphism text-base leading-6 font-normal text-white border border-blue-500 transition ease-in-out duration-300 hover:bg-glassmorphishm-38 hover:-translate-y-2">
             <LinkedIn className="inline-block w-6 h-6 text-white" />
             <span className="tex-white content-center">
               Linked In/Andrew Virya Victorio
@@ -65,7 +65,7 @@ export default function Home() {
           </button>
         </Link>
         <Link href="mailto:andrew.avv03@gmail.com?subject=I want to collaborate with you!">
-          <button className="flex flex-row w-full justify-between px-4 py-4 items-center gap-6 rounded-md bg-gradient-to-br from-glassmorphishm-38 to-glassmorphishm-8 drop-shadow-glassmorphism text-base leading-6 font-normal text-white border border-red-500">
+          <button className="flex flex-row w-full justify-between px-4 py-4 items-center gap-6 rounded-md bg-gradient-to-br from-glassmorphishm-38 to-glassmorphishm-8 drop-shadow-glassmorphism text-base leading-6 font-normal text-white border border-red-500 transition ease-in-out duration-300 hover:bg-glassmorphishm-38 hover:-translate-y-2">
             <Mail className="inline-block w-6 h-6 text-white" />
             <span className="tex-white content-center">
               Email/andrew.avv03@gmail.com
