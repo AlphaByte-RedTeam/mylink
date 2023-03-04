@@ -1,6 +1,12 @@
 import Image from "next/image"
 import Link from "next/link"
 import { GithubCircle, Instagram, Twitter, LinkedIn, Mail } from "iconoir-react"
+import { IBM_Plex_Mono } from "next/font/google"
+
+const ibmPlexMono = IBM_Plex_Mono({
+  subsets: ["latin"],
+  weight: "400",
+})
 
 export default function Home() {
   return (
@@ -21,9 +27,13 @@ export default function Home() {
           height={128}
         />
         <div className="space-y-2">
-          <h1 className="text-white text-3xl leading-9 font-bold">
-            Andrew Virya Victorio
-          </h1>
+          <span className="flex flex-row items-center gap-3">
+            <h1 className="text-white text-3xl leading-9 font-bold">
+              Andrew Virya Victorio
+            </h1>
+            <p className="text-white text-3xl">•</p>
+            <p className="text-zinc-400 text-xl">Software Engineer</p>
+          </span>
           <p className="text-gray-400 text-lg leading-7 font-normal">
             Strong work ethic and have high standards, collaborative team
             player, IT enthusiast, 3rd year Computer Science student at Bunda
@@ -73,6 +83,56 @@ export default function Home() {
             <div>{""}</div>
           </button>
         </Link>
+      </div>
+      <div
+        className="flex flex-row gap-4 overflow-x-scroll scrollbar-hide"
+        style={ibmPlexMono.style}
+      >
+        <p className="flex justify-center items-center rounded-full px-2 p-1 bg-zinc-900 text-gray-400 whitespace-nowrap text-sm">
+          web dev
+        </p>
+        <p className="flex justify-center items-center rounded-full px-2 p-1 bg-zinc-900 text-gray-400 whitespace-nowrap text-sm">
+          mobile dev
+        </p>
+        <p className="flex justify-center items-center rounded-full px-2 p-1 bg-zinc-900 text-gray-400 whitespace-nowrap text-sm">
+          ui design
+        </p>
+        <p className="flex justify-center items-center rounded-full px-2 p-1 bg-zinc-900 text-gray-400 whitespace-nowrap text-sm">
+          cyber security
+        </p>
+        <p className="flex justify-center items-center rounded-full px-2 p-1 bg-zinc-900 text-gray-400 whitespace-nowrap text-sm">
+          software engineering
+        </p>
+        <p className="flex justify-center items-center rounded-full px-2 p-1 bg-zinc-900 text-gray-400 whitespace-nowrap text-sm">
+          artificial intelligence
+        </p>
+        <p className="flex justify-center items-center rounded-full px-2 p-1 bg-zinc-900 text-gray-400 whitespace-nowrap text-sm">
+          project management
+        </p>
+        <p className="flex justify-center items-center rounded-full px-2 p-1 bg-zinc-900 text-gray-400 whitespace-nowrap text-sm">
+          leadership
+        </p>
+        <p className="flex justify-center items-center rounded-full px-2 p-1 bg-zinc-900 text-gray-400 whitespace-nowrap text-sm">
+          next.js
+        </p>
+        <p className="flex justify-center items-center rounded-full px-2 p-1 bg-zinc-900 text-gray-400 whitespace-nowrap text-sm">
+          flutter
+        </p>
+        <p className="flex justify-center items-center rounded-full px-2 p-1 bg-zinc-900 text-gray-400 whitespace-nowrap text-sm">
+          c++
+        </p>
+        <p className="flex justify-center items-center rounded-full px-2 p-1 bg-zinc-900 text-gray-400 whitespace-nowrap text-sm">
+          dart
+        </p>
+        <p className="flex justify-center items-center rounded-full px-2 p-1 bg-zinc-900 text-gray-400 whitespace-nowrap text-sm">
+          javascript
+        </p>
+        <p className="flex justify-center items-center rounded-full px-2 p-1 bg-zinc-900 text-gray-400 whitespace-nowrap text-sm">
+          typescript
+        </p>
+        <p className="flex justify-center items-center rounded-full px-2 p-1 bg-zinc-900 text-gray-400 whitespace-nowrap text-sm">
+          python
+        </p>
       </div>
     </main>
   )
