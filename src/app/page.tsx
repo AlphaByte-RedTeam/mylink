@@ -42,7 +42,7 @@ export default function Home() {
         </div>
       </div>
       <div className="flex flex-col space-y-6 z-20">
-        <Link href="https://github.com/AlphaByte-RedTeam">
+        <Link href="https://github.com/AlphaByte-RedTeam" target="_blank">
           <button className="flex flex-row w-full justify-between px-4 py-4 items-center gap-6 rounded-md bg-gradient-to-br from-glassmorphishm-38 to-glassmorphishm-8 drop-shadow-glassmorphism text-base leading-6 font-normal text-white border border-gray-300 transition ease-in-out duration-300 hover:bg-glassmorphishm-38 hover:-translate-y-2">
             <GithubCircle className="inline-block w-6 h-6 text-white" />
             <span className="tex-white content-center">
@@ -51,21 +51,24 @@ export default function Home() {
             <div>{""}</div>
           </button>
         </Link>
-        <Link href="https://instagram.com/avv_210/">
+        <Link href="https://instagram.com/avv_210/" target="_blank">
           <button className="flex flex-row w-full justify-between px-4 py-4 items-center gap-6 rounded-md bg-gradient-to-br from-glassmorphishm-38 to-glassmorphishm-8 drop-shadow-glassmorphism text-base leading-6 font-normal text-white border border-fuchsia-300 transition ease-in-out duration-300 hover:bg-glassmorphishm-38 hover:-translate-y-2">
             <Instagram className="inline-block w-6 h-6 text-white" />
             <span className="tex-white content-center">Instagram/@avv_210</span>
             <div>{""}</div>
           </button>
         </Link>
-        <Link href="https://twitter.com/avv_210">
+        <Link href="https://twitter.com/avv_210" target="_blank">
           <button className="flex flex-row w-full justify-between px-4 py-4 items-center gap-6 rounded-md bg-gradient-to-br from-glassmorphishm-38 to-glassmorphishm-8 drop-shadow-glassmorphism text-base leading-6 font-normal text-white border border-blue-300 transition ease-in-out duration-300 hover:bg-glassmorphishm-38 hover:-translate-y-2">
             <Twitter className="inline-block w-6 h-6 text-white" />
             <span className="tex-white content-center">Twitter/@avv_210</span>
             <div>{""}</div>
           </button>
         </Link>
-        <Link href="https://www.linkedin.com/in/andrew-virya-victorio/">
+        <Link
+          href="https://www.linkedin.com/in/andrew-virya-victorio/"
+          target="_blank"
+        >
           <button className="flex flex-row w-full justify-between px-4 py-4 items-center gap-6 rounded-md bg-gradient-to-br from-glassmorphishm-38 to-glassmorphishm-8 drop-shadow-glassmorphism text-base leading-6 font-normal text-white border border-blue-500 transition ease-in-out duration-300 hover:bg-glassmorphishm-38 hover:-translate-y-2">
             <LinkedIn className="inline-block w-6 h-6 text-white" />
             <span className="tex-white content-center">
@@ -74,7 +77,10 @@ export default function Home() {
             <div>{""}</div>
           </button>
         </Link>
-        <Link href="mailto:andrew.avv03@gmail.com?subject=I want to collaborate with you!">
+        <Link
+          href="mailto:andrew.avv03@gmail.com?subject=I want to collaborate with you!"
+          target="_blank"
+        >
           <button className="flex flex-row w-full justify-between px-4 py-4 items-center gap-6 rounded-md bg-gradient-to-br from-glassmorphishm-38 to-glassmorphishm-8 drop-shadow-glassmorphism text-base leading-6 font-normal text-white border border-red-500 transition ease-in-out duration-300 hover:bg-glassmorphishm-38 hover:-translate-y-2">
             <Mail className="inline-block w-6 h-6 text-white" />
             <span className="tex-white content-center">
@@ -85,7 +91,7 @@ export default function Home() {
         </Link>
       </div>
       <div
-        className="flex flex-row gap-4 overflow-x-scroll scrollbar-hide"
+        className="flex flex-row gap-4 overflow-x-scroll scrollbar-hide z-20"
         style={ibmPlexMono.style}
       >
         <p className="flex justify-center items-center rounded-full px-2 p-1 bg-zinc-900 text-gray-400 whitespace-nowrap text-sm">
