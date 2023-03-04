@@ -29,10 +29,10 @@ export default function Home() {
         />
         <div className="space-y-2">
           <span className="flex flex-col items-start gap-3">
-            <h1 className="text-white text-xl md:text-3xl leading-7 md:leading-9 font-bold">
+            <h1 className="text-white text-2xl md:text-3xl leading-7 md:leading-9 font-bold">
               Andrew Virya Victorio
             </h1>
-            <p className="text-zinc-400 text-base md:text-xl">
+            <p className="text-zinc-400 text-lg md:text-xl">
               🧑‍💻 Software Engineer
             </p>
           </span>
