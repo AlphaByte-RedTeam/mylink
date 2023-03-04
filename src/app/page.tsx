@@ -1,90 +1,78 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from './page.module.css'
-
-const inter = Inter({ subsets: ['latin'] })
+import Image from "next/image"
+import Link from "next/link"
+import { GithubCircle, Instagram, Twitter, LinkedIn, Mail } from "iconoir-react"
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className={styles.center}>
+    <main className="flex flex-col space-y-14 justify-center max-w-3xl p-8 mx-auto bg-black min-h-screen min-w-screen md:min-w-3xl">
+      <Image
+        className="absolute z-10 blur-[128px] opacity-60"
+        src="/gradient.svg"
+        alt="Gradient background"
+        width={650}
+        height={650}
+      />
+      <div className="flex flex-col md:flex-row gap-6 z-20">
         <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
+          className="rounded-md w-24 h-24"
+          src="/myphoto.png"
+          alt="Andrew's photo"
+          width={128}
+          height={128}
         />
-        <div className={styles.thirteen}>
-          <Image src="/thirteen.svg" alt="13" width={40} height={31} priority />
+        <div className="space-y-2">
+          <h1 className="text-white text-3xl leading-9 font-bold">
+            Andrew Virya Victorio
+          </h1>
+          <p className="text-gray-400 text-lg leading-7 font-normal">
+            Strong work ethic and have high standards, collaborative team
+            player, IT enthusiast, 3rd year Computer Science student at Bunda
+            Mulia University.
+          </p>
         </div>
       </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://beta.nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      <div className="flex flex-col space-y-6 z-20">
+        <Link href="https://github.com/AlphaByte-RedTeam">
+          <button className="flex flex-row w-full justify-between px-4 py-4 items-center gap-6 rounded-md bg-gradient-to-br from-glassmorphishm-38 to-glassmorphishm-8 drop-shadow-glassmorphism text-base leading-6 font-normal text-white border border-gray-300">
+            <GithubCircle className="inline-block w-6 h-6 text-white" />
+            <span className="tex-white content-center">
+              GitHub/AlphaByte-RedTeam
+            </span>
+            <div>{""}</div>
+          </button>
+        </Link>
+        <Link href="https://instagram.com/avv_210/">
+          <button className="flex flex-row w-full justify-between px-4 py-4 items-center gap-6 rounded-md bg-gradient-to-br from-glassmorphishm-38 to-glassmorphishm-8 drop-shadow-glassmorphism text-base leading-6 font-normal text-white border border-fuchsia-300">
+            <Instagram className="inline-block w-6 h-6 text-white" />
+            <span className="tex-white content-center">Instagram/@avv_210</span>
+            <div>{""}</div>
+          </button>
+        </Link>
+        <Link href="https://twitter.com/avv_210">
+          <button className="flex flex-row w-full justify-between px-4 py-4 items-center gap-6 rounded-md bg-gradient-to-br from-glassmorphishm-38 to-glassmorphishm-8 drop-shadow-glassmorphism text-base leading-6 font-normal text-white border border-blue-300">
+            <Twitter className="inline-block w-6 h-6 text-white" />
+            <span className="tex-white content-center">Twitter/@avv_210</span>
+            <div>{""}</div>
+          </button>
+        </Link>
+        <Link href="https://www.linkedin.com/in/andrew-virya-victorio/">
+          <button className="flex flex-row w-full justify-between px-4 py-4 items-center gap-6 rounded-md bg-gradient-to-br from-glassmorphishm-38 to-glassmorphishm-8 drop-shadow-glassmorphism text-base leading-6 font-normal text-white border border-blue-500">
+            <LinkedIn className="inline-block w-6 h-6 text-white" />
+            <span className="tex-white content-center">
+              Linked In/Andrew Virya Victorio
+            </span>
+            <div>{""}</div>
+          </button>
+        </Link>
+        <Link href="mailto:andrew.avv03@gmail.com?subject=I want to collaborate with you!">
+          <button className="flex flex-row w-full justify-between px-4 py-4 items-center gap-6 rounded-md bg-gradient-to-br from-glassmorphishm-38 to-glassmorphishm-8 drop-shadow-glassmorphism text-base leading-6 font-normal text-white border border-red-500">
+            <Mail className="inline-block w-6 h-6 text-white" />
+            <span className="tex-white content-center">
+              Email/andrew.avv03@gmail.com
+            </span>
+            <div>{""}</div>
+          </button>
+        </Link>
       </div>
     </main>
   )
