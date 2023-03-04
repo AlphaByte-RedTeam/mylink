@@ -4,6 +4,7 @@ import { Inter } from "next/font/google"
 export const metadata = {
   title: "Andrew Virya Victorio - My Link",
   description: "A LinkTree like for my own custom link.",
+  icons: "/favicon.ico",
 }
 
 const inter = Inter({
