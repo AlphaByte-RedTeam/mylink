@@ -139,6 +139,16 @@ export default function Home() {
           python
         </p>
       </div>
+      <footer>
+        <Link href="https://vercel.com" target="_blank">
+          <div className="flex flex-row justify-center z-20 items-center gap-2">
+            <p className="text-white text-base font-semibold font-sans">
+              Deployed by {""}
+            </p>
+            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
+          </div>
+        </Link>
+      </footer>
     </main>
   )
 }
