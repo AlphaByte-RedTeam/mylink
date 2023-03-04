@@ -29,12 +29,14 @@ export default function Home() {
         />
         <div className="space-y-2">
           <span className="flex flex-col items-start gap-3">
-            <h1 className="text-white text-3xl leading-9 font-bold">
+            <h1 className="text-white text-xl md:text-3xl leading-7 md:leading-9 font-bold">
               Andrew Virya Victorio
             </h1>
-            <p className="text-zinc-400 text-xl">🧑‍💻 Software Engineer</p>
+            <p className="text-zinc-400 text-base md:text-xl">
+              🧑‍💻 Software Engineer
+            </p>
           </span>
-          <p className="text-gray-400 text-lg leading-7 font-normal">
+          <p className="text-gray-400 text-sm md:text-lg leading-5 md:leading-7 font-normal">
             Strong work ethic and have high standards, collaborative team
             player, IT enthusiast, 3rd year Computer Science student at Bunda
             Mulia University.
