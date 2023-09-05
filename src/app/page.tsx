@@ -45,7 +45,7 @@ export default function Home() {
         </div>
       </div>
       <div className="flex flex-col space-y-8 z-20 divide-gray-500 divide-y">
-        <div className="text-xl leading-7 font-bold flex items-center justify-center">Social Media</div>
+        <div className="text-xl leading-7 font-bold flex items-center justify-center text-white">Social Media</div>
         <div className="flex flex-col space-y-6 z-20">
           <div></div>
           <Link href="https://github.com/AlphaByte-RedTeam" target="_blank">
@@ -95,7 +95,7 @@ export default function Home() {
               <div>{""}</div>
             </button>
           </Link>
-          <div className="text-xl leading-7 font-bold flex items-center justify-center">Referral</div>
+          <div className="text-xl leading-7 font-bold flex items-center justify-center text-white">Referral</div>
         </div>
         <div className="flex flex-col space-y-6 z-20">
           <div></div>
