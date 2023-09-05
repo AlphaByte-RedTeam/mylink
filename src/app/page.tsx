@@ -2,6 +2,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { GithubCircle, Instagram, Twitter, LinkedIn, Mail } from "iconoir-react"
 import { IBM_Plex_Mono } from "next/font/google"
+import Dashlane from "@/app/logo/Dashlane"
 
 const ibmPlexMono = IBM_Plex_Mono({
   subsets: ["latin"],
@@ -43,54 +44,72 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <div className="flex flex-col space-y-6 z-20">
-        <Link href="https://github.com/AlphaByte-RedTeam" target="_blank">
-          <button className="flex flex-row w-full justify-between px-4 py-4 items-center gap-6 rounded-md bg-gradient-to-br from-glassmorphishm-38 to-glassmorphishm-8 drop-shadow-glassmorphism text-xs md:text-base leading-4 md:leading-6 font-normal text-white border border-gray-300 transition ease-in-out duration-300 hover:bg-glassmorphishm-38 hover:-translate-y-2">
-            <GithubCircle className="inline-block w-6 h-6 text-white" />
-            <span className="tex-white content-center">
-              GitHub/AlphaByte-RedTeam
-            </span>
-            <div>{""}</div>
-          </button>
-        </Link>
-        <Link href="https://instagram.com/avv_210/" target="_blank">
-          <button className="flex flex-row w-full justify-between px-4 py-4 items-center gap-6 rounded-md bg-gradient-to-br from-glassmorphishm-38 to-glassmorphishm-8 drop-shadow-glassmorphism text-xs md:text-base leading-4 md:leading-6 font-normal text-white border border-fuchsia-300 transition ease-in-out duration-300 hover:bg-glassmorphishm-38 hover:-translate-y-2">
-            <Instagram className="inline-block w-6 h-6 text-white" />
-            <span className="tex-white content-center">Instagram/@avv_210</span>
-            <div>{""}</div>
-          </button>
-        </Link>
-        <Link href="https://twitter.com/avv_210" target="_blank">
-          <button className="flex flex-row w-full justify-between px-4 py-4 items-center gap-6 rounded-md bg-gradient-to-br from-glassmorphishm-38 to-glassmorphishm-8 drop-shadow-glassmorphism text-xs md:text-base leading-4 md:leading-6 font-normal text-white border border-blue-300 transition ease-in-out duration-300 hover:bg-glassmorphishm-38 hover:-translate-y-2">
-            <Twitter className="inline-block w-6 h-6 text-white" />
-            <span className="tex-white content-center">Twitter/@avv_210</span>
-            <div>{""}</div>
-          </button>
-        </Link>
-        <Link
-          href="https://www.linkedin.com/in/andrew-virya-victorio/"
-          target="_blank"
-        >
-          <button className="flex flex-row w-full justify-between px-4 py-4 items-center gap-6 rounded-md bg-gradient-to-br from-glassmorphishm-38 to-glassmorphishm-8 drop-shadow-glassmorphism text-xs md:text-base leading-4 md:leading-6 font-normal text-white border border-blue-500 transition ease-in-out duration-300 hover:bg-glassmorphishm-38 hover:-translate-y-2">
-            <LinkedIn className="inline-block w-6 h-6 text-white" />
-            <span className="tex-white content-center">
-              Linked In/Andrew Virya Victorio
-            </span>
-            <div>{""}</div>
-          </button>
-        </Link>
-        <Link
-          href="mailto:andrew.avv03@gmail.com?subject=I want to collaborate with you!"
-          target="_blank"
-        >
-          <button className="flex flex-row w-full justify-between px-4 py-4 items-center gap-6 rounded-md bg-gradient-to-br from-glassmorphishm-38 to-glassmorphishm-8 drop-shadow-glassmorphism text-xs md:text-base leading-4 md:leading-6 font-normal text-white border border-red-500 transition ease-in-out duration-300 hover:bg-glassmorphishm-38 hover:-translate-y-2">
-            <Mail className="inline-block w-6 h-6 text-white" />
-            <span className="tex-white content-center">
-              Email/andrew.avv03@gmail.com
-            </span>
-            <div>{""}</div>
-          </button>
-        </Link>
+      <div className="flex flex-col space-y-8 z-20 divide-gray-500 divide-y">
+        <div className="text-xl leading-7 font-bold flex items-center justify-center">Social Media</div>
+        <div className="flex flex-col space-y-6 z-20">
+          <div></div>
+          <Link href="https://github.com/AlphaByte-RedTeam" target="_blank">
+            <button className="flex flex-row w-full justify-between px-4 py-4 items-center gap-6 rounded-md bg-gradient-to-br from-glassmorphishm-38 to-glassmorphishm-8 drop-shadow-glassmorphism text-xs md:text-base leading-4 md:leading-6 font-normal text-white border-2 border-gray-300 transition ease-in-out duration-300 hover:bg-glassmorphishm-38 hover:-translate-y-2">
+              <GithubCircle className="inline-block w-6 h-6 text-white" />
+              <span className="tex-white content-center">
+                GitHub/AlphaByte-RedTeam
+              </span>
+              <div>{""}</div>
+            </button>
+          </Link>
+          <Link href="https://instagram.com/avv_210/" target="_blank">
+            <button className="flex flex-row w-full justify-between px-4 py-4 items-center gap-6 rounded-md bg-gradient-to-br from-glassmorphishm-38 to-glassmorphishm-8 drop-shadow-glassmorphism text-xs md:text-base leading-4 md:leading-6 font-normal text-white border-2 border-fuchsia-300 transition ease-in-out duration-300 hover:bg-glassmorphishm-38 hover:-translate-y-2">
+              <Instagram className="inline-block w-6 h-6 text-white" />
+              <span className="tex-white content-center">Instagram/@avv_210</span>
+              <div>{""}</div>
+            </button>
+          </Link>
+          <Link href="https://twitter.com/avv_210" target="_blank">
+            <button className="flex flex-row w-full justify-between px-4 py-4 items-center gap-6 rounded-md bg-gradient-to-br from-glassmorphishm-38 to-glassmorphishm-8 drop-shadow-glassmorphism text-xs md:text-base leading-4 md:leading-6 font-normal text-white border-2 border-blue-300 transition ease-in-out duration-300 hover:bg-glassmorphishm-38 hover:-translate-y-2">
+              <Twitter className="inline-block w-6 h-6 text-white" />
+              <span className="tex-white content-center">Twitter/@avv_210</span>
+              <div>{""}</div>
+            </button>
+          </Link>
+          <Link
+            href="https://www.linkedin.com/in/andrew-virya-victorio/"
+            target="_blank"
+          >
+            <button className="flex flex-row w-full justify-between px-4 py-4 items-center gap-6 rounded-md bg-gradient-to-br from-glassmorphishm-38 to-glassmorphishm-8 drop-shadow-glassmorphism text-xs md:text-base leading-4 md:leading-6 font-normal text-white border-2 border-blue-500 transition ease-in-out duration-300 hover:bg-glassmorphishm-38 hover:-translate-y-2">
+              <LinkedIn className="inline-block w-6 h-6 text-white" />
+              <span className="tex-white content-center">
+                Linked In/Andrew Virya Victorio
+              </span>
+              <div>{""}</div>
+            </button>
+          </Link>
+          <Link
+            href="mailto:andrew.avv03@gmail.com?subject=I want to collaborate with you!"
+            target="_blank"
+          >
+            <button className="flex flex-row w-full justify-between px-4 py-4 items-center gap-6 rounded-md bg-gradient-to-br from-glassmorphishm-38 to-glassmorphishm-8 drop-shadow-glassmorphism text-xs md:text-base leading-4 md:leading-6 font-normal text-white border-2 border-red-500 transition ease-in-out duration-300 hover:bg-glassmorphishm-38 hover:-translate-y-2">
+              <Mail className="inline-block w-6 h-6 text-white" />
+              <span className="tex-white content-center">
+                Email/andrew.avv03@gmail.com
+              </span>
+              <div>{""}</div>
+            </button>
+          </Link>
+          <div className="text-xl leading-7 font-bold flex items-center justify-center">Referral</div>
+        </div>
+        <div className="flex flex-col space-y-6 z-20">
+          <div></div>
+          <Link
+            href="https://www.dashlane.com/en/as/aHcltrGUKzsu"
+            target="_blank"
+            >
+            <button className="flex flex-row w-full justify-between px-4 py-4 items-center gap-6 rounded-md bg-gradient-to-br from-glassmorphishm-38 to-glassmorphishm-8 drop-shadow-glassmorphism text-xs md:text-base leading-4 md:leading-6 font-normal text-white border-2 border-[#09363F] transition ease-in-out duration-300 hover:bg-glassmorphishm-38 hover:-translate-y-2">
+              <Dashlane />
+              <span className="text-wrap w-48 text-white content-center">Free Trial for 6 Months Using My Referral</span>
+              <div>{""}</div>
+            </button>
+          </Link>
+        </div>
       </div>
       <div
         className="flex flex-row gap-4 overflow-x-scroll scrollbar-hide z-20"
@@ -140,6 +159,9 @@ export default function Home() {
         </p>
         <p className="flex justify-center items-center rounded-full px-2 p-1 bg-zinc-900 text-gray-400 whitespace-nowrap text-sm">
           python
+        </p>
+        <p className="flex justify-center items-center rounded-full px-2 p-1 bg-zinc-900 text-gray-400 whitespace-nowrap text-sm">
+          rust
         </p>
       </div>
       <footer>
